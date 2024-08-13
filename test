@@ -3,7 +3,7 @@ def projectName = '<project-name>'
 
 pipeline {
   environment {
-    DOCKER = credentials("docker")
+    DOCKER = credentials("docker-cred")
   }
   agent {
     kubernetes {
